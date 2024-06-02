@@ -1,0 +1,130 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rede {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+}
+
+input,
+select,
+button {
+  display: block;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  background-color: #fff;
+}
+
+option {
+  text-align: center;
+  font-weight: bolder;
+}
+
+button {
+  background-color: #8d42e8;
+  color: #fff;
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+select {
+  margin: 5px 0;
+}
+
+p,
+label {
+  font-size: 1.5em;
+  margin: 5px 0;
+}
+
+option,
+select,
+input,
+button {
+  font-size: 1.2rem;
+}
+
+.logo {
+  position: absolute;
+  bottom: 8%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .rede {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  p,
+  label {
+    font-size: 1.2em;
+  }
+
+  .logo {
+    bottom: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  #root {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p,
+  label {
+    font-size: 1em;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 0.9rem;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+
+  .logo {
+    bottom: 3%;
+  }
+}
